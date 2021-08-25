@@ -1,0 +1,384 @@
+:root {
+	--main-light-bg-color: #abddff;
+	--main-dark-bg-color: #0077c7;
+	--footer-light-bg-color: #4000a1;
+	--footer-dark-bg-color: #210052;
+	--warning-color: #f6ff00;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: #0077c7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#abddff), to(#0077c7));
+	background: -moz-linear-gradient(top, #abddff, #0077c7);
+	background: -o-linear-gradient(top, #abddff, #0077c7);
+	background: -ms-linear-gradient(top, #abddff, #0077c7);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	color: white;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border-style: none;
+}
+
+hr {
+	border: none;
+	border-bottom: 2px solid #d1d1d1;
+	margin: 0 auto;
+	width: 18.75rem;
+}
+
+footer {
+	background-color: #210052;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4000a1), to(#210052));
+	background: -moz-linear-gradient(top, #4000a1, #210052);
+	background: -o-linear-gradient(top, #4000a1, #210052);
+	background: -ms-linear-gradient(top, #4000a1, #210052);
+	padding: 15px 30px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.container {
+	padding: 10px;
+}
+
+.mw-415 {
+	max-width: 415px;
+	margin: 0 auto;
+}
+
+.headers {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.main-header {
+	font-size: 2.75rem;
+	font-weight: 400;
+	padding: 20px;
+}
+
+.alert-messages {
+	padding-bottom: 15px;
+}
+
+.headers .alert {
+	font-size: 1.125rem;
+}
+
+.alert, .error {
+	color: #f6ff00;
+	display: block;
+	padding-bottom: 5px;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.align-right {
+	float: right;
+}
+
+/* ---------------------- FORMS ---------------------- */
+
+.form-wrapper {
+	padding-top: 20px;
+}
+
+.input-group {
+	padding-bottom: 20px;
+}
+
+.input-group span {
+	display: block;
+	padding-bottom: 4px;
+	word-spacing: 4px;
+}
+
+.form-control {
+	background-color: #210052;
+	background: -webkit-gradient(linear, left top, left bottom, from(#4000a1), to(#210052));
+	background: -moz-linear-gradient(top, #4000a1, #210052);
+	background: -o-linear-gradient(top, #4000a1, #210052);
+	background: -ms-linear-gradient(top, #4000a1, #210052);
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1rem;
+	padding: 5px;
+}
+
+/* ---------------------- BUTTONS ---------------------- */
+
+.button {
+	background-color: #b2dbda;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cafaf9), to(#b2dbda));
+	background: -moz-linear-gradient(top, #cafaf9, #b2dbda);
+	background: -o-linear-gradient(top, #cafaf9, #b2dbda);
+	background: -ms-linear-gradient(top, #cafaf9, #b2dbda);
+	border-bottom: 2px solid #b2b2b2;
+	border-radius: .25rem;
+	color: #0000ff;
+	display: inline-block;
+	font-size: 1rem;
+	text-shadow: 0px 1px 1px #fff;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.button:active {
+	background-color: #cafaf9;
+	background: -webkit-gradient(linear, left top, left bottom, from(#b2dbda), to(#cafaf9));
+	background: -moz-linear-gradient(top, #b2dbda, #cafaf9);
+	background: -o-linear-gradient(top, #b2dbda, #cafaf9);
+	background: -ms-linear-gradient(top, #b2dbda, #cafaf9);
+	border: 1px solid #a4a4a4;
+	border-top: 2px solid #b2b2b2;
+	color: #0000cf;
+	cursor: pointer;
+}
+
+.green-button {
+	background-color: #00b009;
+	background: -webkit-gradient(linear, left top, left bottom, from(#00cc0a), to(#00b009));
+	background: -moz-linear-gradient(top, #00cc0a, #00b009);
+	background: -o-linear-gradient(top, #00cc0a, #00b009);
+	background: -ms-linear-gradient(top, #00cc0a, #00b009);
+	border-bottom: 2px solid #009908;
+	color: #fff;
+}
+
+.green-button:active {
+	background: -webkit-gradient(linear, left top, left bottom, from(#00b009), to(#00cc0a));
+	background: -moz-linear-gradient(top, #00b009, #00cc0a);
+	background: -o-linear-gradient(top, #00b009, #00cc0a);
+	background: -ms-linear-gradient(top, #00b009, #00cc0a);
+	border: 1px solid #00ab09;
+	border-top: 2px solid #009908;
+	color: #fff;
+}
+
+.submit-form {
+	padding: 5px 20px;
+}
+
+.footer-button {
+	padding: 6px 24px;
+	line-height: 1.5;
+}
+
+.fa-long-arrow-alt-left {
+	font-size: 1.75rem;
+}
+
+.back {
+	display: flex;
+	align-items: center;		/* vertical */
+	justify-content: center;	/* horizontal */
+	height: 2.375rem;
+	width: 6.125rem;
+}
+
+/* ------------------- login page ------------------- */
+
+.login-section {
+	padding: 40px 10px;
+}
+
+.loginbox h1 {
+	font-size: 2.5rem;
+	padding: 0 0 40px;
+	text-align: center;
+}
+
+/* ------------------- register page ------------------- */
+
+.new-account-num p {
+	padding: 10px 0;
+}
+
+.new-account-number {
+	font-size: 2rem;
+}
+
+.input-group .fas {
+	font-size: 1.25rem;
+}
+
+.pin-input {
+	margin-right: 0.625rem;
+}
+
+/* ------------------- account page ------------------- */
+
+.authorized-user-accounts {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.accordion-button {
+	background-color: #b9e4e3;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cafaf9), to(#b2dbda));
+	background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+	background: -o-linear-gradient(top, #beeae9, #a8cfce);
+	background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+	border-bottom: 2px solid #b2b2b2;
+	border-radius: .25rem;
+	color: #0000ff;
+	font-size: 1.5rem;
+}
+
+.accordion-body .link a {
+	font-size: 1.25rem;
+}
+
+.accordion-body .link a:hover {
+	color: #0000cf;
+}
+
+.accordion-body .link {
+	text-align: center;
+	padding: 8px;
+}
+
+/* ------------------- withdraw/deposit pages ------------------- */
+
+.balance-amount {
+	font-size: 3.125rem;
+	padding: 5px 0;
+}
+
+.balance-amount sup {
+	font-size: 1.5rem;
+}
+
+.current-balance-subtitle {
+	font-size: 1rem;
+	padding-bottom: 20px;
+}
+
+.amount-header {
+	font-weight: 400;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.total-amount {
+	color: #000870;
+}
+
+.dollar-field, .cent-field {
+	display: inline-block;
+}
+
+.dollar-field .form-control {
+	width: 100px;
+}
+
+.cent-field .form-control {
+	width: 50px;
+}
+
+.submit-amount-btn {
+	padding-top: 20px;
+}
+
+/* ------------------- registration confirmation ------------------- */
+
+.successful-registration-message {
+	font-size: 1.125rem;
+	padding: 20px;
+}
+
+/* ------------------- media queries ------------------- */
+
+@media (max-height: 370px) {
+	.account-footer {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+@media (max-height: 480px) {
+	.checking-account-footer, .saving-account-footer {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+@media (max-height: 440px) {
+	.login-footer {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+@media (max-height: 650px) {
+	.register-footer {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+@media (max-height: 533px) {
+	.edit-profile-footer {
+		position: relative;
+		margin-top: 30px;
+	}
+}
+
+@media (min-height: 570px) {
+	.login-section {
+		padding-top: 80px;
+	}
+}
+
+@media (min-height: 600px) {
+	.login-section {
+		padding-top: 140px;
+	}
+	.headers .main-header {
+		padding: 40px 10px;
+	}
+	.registration {
+		padding: 20px;
+	}
+	.new-account-num p {
+		padding: 16px 0;
+	}
+}
+
+@media (min-height: 670px) {
+	.login-section {
+		padding-top: 200px;
+	}
+}
+
+@media (min-height: 1024px) {
+	.loginbox {
+		padding-top: 256px;
+	}
+}
