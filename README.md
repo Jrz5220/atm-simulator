@@ -14,8 +14,8 @@ The following is a description of the java annotations used to configure Spring 
 <br/>
 <br/>
 1. @Configuration
-    1. indicates that this class declares one or more @Bean methods to be managed by the Spring container. @Bean methods return references to bean objects.
+    indicates that this class declares one or more @Bean methods to be managed by the Spring container. @Bean methods return references to bean objects.
 2. @EnableWebMvc
-    1. imports the Spring MVC configuration from WebMvcConfigurationSupport (the main class providing the MVC configuration). To customize the imported configuration, implement the interface WebMvcConfigurer and override individual methods.
+    imports the Spring MVC configuration from WebMvcConfigurationSupport (the main class providing the MVC configuration). To customize the imported configuration, implement the interface WebMvcConfigurer and override individual methods.
 3. @EnableTransactionManagement
-    1. Enables Spring's annotation-driven transaction management capability for the database transactions.
+    Enables Spring's annotation-driven transaction management capability for the database transactions.
