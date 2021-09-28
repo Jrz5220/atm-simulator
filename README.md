@@ -14,17 +14,10 @@ A Spring MVC web app with Java based configuration that simulates an ATM. Includ
 The following is a description of the java annotations used to configure Spring MVC for the class AtmAppConfig
 <br/>
 <br/>
-1. @Configuration
-<br/>
-indicates that this class declares one or more @Bean methods to be managed by the Spring container. @Bean methods return references to bean objects.
-2. @EnableWebMvc
-<br/>
-imports the Spring MVC configuration from WebMvcConfigurationSupport (the main class providing the MVC configuration). To customize the imported configuration, implement the interface WebMvcConfigurer and override individual methods.
-3. @EnableTransactionManagement
-<br/>
-Enables Spring's annotation-driven transaction management capability for the database transactions.
-4. @ComponentScan<br/>
-allows this configuration class to scan the package “com.felix.atmSim” and its sub packages for components (beans) to be registered by the Spring container.
+1. @Configuration<br/>indicates that this class declares one or more @Bean methods to be managed by the Spring container. @Bean methods return references to bean objects.
+2. @EnableWebMvc<br/>imports the Spring MVC configuration from WebMvcConfigurationSupport (the main class providing the MVC configuration). To customize the imported configuration, implement the interface WebMvcConfigurer and override individual methods.
+3. @EnableTransactionManagement<br/>Enables Spring's annotation-driven transaction management capability for the database transactions.
+4. @ComponentScan<br/>allows this configuration class to scan the package “com.felix.atmSim” and its sub packages for components (beans) to be registered by the Spring container.
 5. @PropertySource<br/>
 adds a property source to Spring’s Environment interface. The properties are located in src/main/resources/persistence-mysql.properties (not included in this repo). It contains the JDBC connection properties, connection pool properties, and Hibernate properties.
 ### Fields
